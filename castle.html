@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" type="text/css" href="css/style2.css">
+
+
+</head>
+<body background = "image/castle.jpg">
+<form>
+  <label id = "1">Answer</label><br>
+  <input type="text" id = "2">
+  <label id = "3">pounds</label><br>
+  <button type="button" onclick="testAnswer()">Submit</button>
+
+
+  <br>
+</form>
+
+<input type="image" id="tip1" src="image/tip.jpg" style="height:50px;width:50px;" />
+<script>
+function testAnswer() 
+{
+	var answer1 = document.getElementById("2").value;
+	if(answer1 == "500")
+	{
+		alert("Correct! You are perfect!");
+		window.location = "gameover.html";
+	}
+	else 
+		alert("Oops! Answer is incorrect!");
+	
+}
+
+</script>
+
+</body>
+</html>

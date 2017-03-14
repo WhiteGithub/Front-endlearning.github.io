@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Puss's Journey Math Game - Level 2</title>
+<link rel="stylesheet" href="css/bootstrap.min.css" /> 
+<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="css/mainStyle.css">
+
+</head>
+<body id="day2">
+<div class="introText">Puss was going through town to find something to eat and came across the king's guard. The king's guard told him that the king is looking for rare unicorns and dragons to keep as pets. The puss went into the forest and set a trap in the tree to catch these creatures, and lied underneath the tree to keep watch. Upon nightfall, puss got awoken by a loud thud and sees several creatures in the trap. As he was laying underneath the tree, he could only observe the number of their feet. At this time, he observed 64 rainbow unicorns' feet and 20 dragons' feet. How many rainbow unicorns and dragons did he catch?</div>
+<form class="hidden">
+    <p>Answer</p>
+	<fieldset class="form-group">
+      <label id = "3">Unicorn</label><br>	
+      <input type="text" id = "2" class="form-control" />
+    </fieldset> 
+    <fieldset class="form-group"> 
+      <label id = "5">Dragon</label><br>
+      <input type="text" id = "4" class="form-control" />
+  	</fieldset> 
+  <button type="button" class="btn btn-primary" onclick="testAnswer()">Submit</button>
+	<img src="image/tip.jpg" alt=""  data-toggle="tooltip" title="Hint: a rainbow unicorn has 4 feet; a dragon has 2 feet" data-container="body" class="hidden tTip" />
+</form>
+<script>
+function testAnswer() 
+{
+	var answer1 = document.getElementById("2").value;
+	var answer2 = document.getElementById("4").value;
+	if((answer1 == "14")&&(answer2 == "10"))
+	{
+		alert("Correct! You are perfect!");
+		window.location = "level2.html";
+	}
+	else if((answer1 != "14")&&(answer2 == "10"))
+		alert("Oops! The first answer is incorrect!");
+	else if((answer1 == "14")&&(answer2 != "10"))
+		alert("Oops! The second answer is incorrect!");
+	else 
+		alert("Oops! All answers are incorrect!");
+	
+}
+
+</script>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/typed.js"></script>
+
+</body>
+</html>

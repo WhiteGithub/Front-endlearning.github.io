@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Puss's Journey Math Game - Level 3</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" /> 
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/mainStyle.css">
+</head>
+<body id="day4">
+<div class="introText">The quirky king got bored by the pets soon so puss has to figure out a new present for him. "The sharpest sword will be a great idea!" he thought. He was informed that there is an Ogre who has a gift of transforming into different items, and decided to find out him. Puss also learned that the Ogre was actually living in one of the blue gingerbread houses in the huge neighborhood that he owned. On his way to the neighborhood, Puss found out that 1/3 of the houses are brown; pink gingerbread houses consist of 1/6 of the total 36 houses. The rest are blue. Can you help him calculate the number of blue houses that he has to search to find the Ogre?</div>
+<form class="hidden">
+    <p>Answer</p>
+	<fieldset class="form-group">
+      <label id = "3">Houses</label><br>	
+      <input type="text" id = "2" class="form-control" />
+    </fieldset> 
+  <button type="button" class="btn btn-primary" onclick="testAnswer()">Submit</button>
+	<img src="image/tip.jpg" alt=""  data-toggle="tooltip" title="Hint: " data-container="body" class="hidden tTip" />
+</form>
+<script>
+function testAnswer() 
+{
+	var answer1 = document.getElementById("2").value;
+	if(answer1 == "18")
+	{
+		alert("Correct! You are perfect!");
+		window.location = "gameover.html";
+	}
+	else 
+		alert("Oops! Answer is incorrect!");
+	
+}
+
+</script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/typed.js"></script>
+</body>
+</html>

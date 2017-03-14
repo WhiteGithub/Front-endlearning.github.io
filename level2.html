@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Puss's Journey Math Game - Level 2</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" /> 
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/mainStyle.css">
+</head>
+<body id="day3">
+<div class="introText">One day, the puss heard that the king is coming to the town for an audit. In order to help his owner approach the king in the audit, the puss suggested his owner to be at the spot in the river at a certain time. The owner took his puss's suggestion. On that day, he woke up at 8 am. It took him 20 minutes to get ready; he rode a horse for 30 minutes to the riverbank. Finally he swam for 15 minutes to the exact spot on time. What time did he arrive at that spot?</div>
+<form class="hidden">
+    <p>Answer</p>
+	<fieldset class="form-group">
+      <label id = "3">Hours</label><br>	
+      <input type="text" id = "2" class="form-control" />
+    </fieldset> 
+    <fieldset class="form-group"> 
+      <label id = "5">Minutes</label><br>
+      <input type="text" id = "4" class="form-control" />
+  	</fieldset> 
+  <button type="button" class="btn btn-primary" onclick="testAnswer()">Submit</button>
+	<img src="image/tip.jpg" alt=""  data-toggle="tooltip" title="Hint: " data-container="body" class="hidden tTip" />
+</form>
+
+<script>
+function testAnswer() 
+{
+	var answer1 = document.getElementById("2").value;
+	var answer2 = document.getElementById("4").value;
+	if((answer1 == "9")&&((answer2 == "5")||(answer2 == "05")))
+	{
+		alert("Correct! You are perfect!");
+		window.location = "level3.html";
+	}
+	else if((answer1 != "9")&&((answer2 == "5")||(answer2 == "05")))
+		alert("Oops! The first answer is incorrect!");
+	else if((answer1 == "9")&&(answer2 != "5")&&((answer2 != "05")))
+		alert("Oops! The second answer is incorrect!");
+	else 
+		alert("Oops! All answers are incorrect!");
+	
+}
+
+</script>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/typed.js"></script>
+
+</body>
+</html>
