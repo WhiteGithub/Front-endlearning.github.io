@@ -1,0 +1,59 @@
+<style>
+body{
+      padding-top: 50px;
+      padding-bottom: 50px;
+     }
+.more{
+  text-decoration: underline;
+  font-weight: bold;
+}
+hr.divider{
+      margin:40px 0;
+      color:#e8e8e8;
+     }
+     /*carousel css starts*/
+.carousel{
+       height: 700px;
+       background-color: #000;
+     }
+.carousel .item{
+       height: 700px;
+       background-color: #000;
+     }
+.carousel img{
+   width: 100%;
+     }
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+      width: 70%; margin:0 auto;}
+.carousel-caption p{
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.8;
+     }
+      /*carousel css end*/
+      /*four col css*/
+#summary-containner .col-lg-3{
+      margin-top: 100px;
+      margin-bottom: 100px;
+      text-align: center;
+     }
+     /*graysection css*/
+.feature-heading .text-muted{
+  font-size: 28px;
+  color:gray;
+}
+.graysection{
+  background:#384044;
+  color:#fff;
+  margin-bottom: 40px;
+}
+.graysection .col-md-6{
+  text-align:center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/*media css*/
+.media{
+  padding: 50px;    
+}
